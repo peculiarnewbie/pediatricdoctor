@@ -1,17 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import BlogList from "../components/BlogList.astro";
-import ThemeIcon from "../components/ThemeIcon.astro"
+import BlogList from "../components/blog/BlogList.astro";
+import BlogListItem from "../components/blog/BlogListItem.astro";
+import ThemeIcon from "../components/ThemeIcon.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-    <ThemeIcon />
+		<ThemeIcon />
 		<h1>🚧 Under Construction 🚧</h1>
 		<h3>dr. Hermansyah, SpOT (K)</h3>
-		<p>Pediatric Orthopaedic Surgeon</p>
-    <BlogList />
+		<p class="text-2xl text-red-500">Pediatric Orthopaedwefic Surgeon</p>
+		<BlogList>
+			<BlogListItem />
+			<BlogListItem />
+			<BlogListItem />
+		</BlogList>
 	</main>
 </Layout>
 
